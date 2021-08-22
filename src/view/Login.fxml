@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="sPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane fx:id="aPane" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <ImageView fx:id="backImg" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/logIn.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="1860.0" layoutY="15.0" onAction="#closeButtonClickMethod" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: linear-gradient(to right, #e0eafc, #cfdef3); -fx-background-radius: 30;" text="X">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#8a852f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <AnchorPane fx:id="movingPane" layoutX="1032.0" layoutY="86.0" prefHeight="719.0" prefWidth="874.0">
+               <children>
+                  <AnchorPane fx:id="loginPane" layoutX="14.0" layoutY="410.0" prefHeight="452.0" prefWidth="392.0" style="-fx-background-radius: 100; -fx-background-color: linear-gradient(to right, #e44d26, #f16529);;" stylesheets="@getCss.css">
+                     <children>
+                        <JFXTextField fx:id="userid" focusColor="WHITE" layoutX="53.0" layoutY="116.0" prefHeight="31.0" prefWidth="301.0" promptText="User ID" style="-fx-font-size: 18; -fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="#79bf07" />
+                        <JFXPasswordField fx:id="passwords" focusColor="WHITE" layoutX="53.0" layoutY="198.0" prefHeight="31.0" prefWidth="301.0" promptText="Passwords" style="-fx-font-size: 18; -fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="#79bf07" />
+                        <JFXButton fx:id="newRegister" layoutX="100.0" layoutY="366.0" onAction="#newRegister" style="-fx-font-size: 18;" text="Don't have Account ?" textFill="#f5f5f5" />
+                        <JFXButton fx:id="loginBtn" layoutX="135.0" layoutY="273.0" onAction="#getLogin" prefHeight="50.0" prefWidth="123.0" ripplerFill="#d00606" style="-fx-font-size: 22; -fx-background-color: #fff; -fx-background-radius: 100;" text="log in" textFill="#cf0606" />
+                        <JFXButton buttonType="RAISED" layoutX="105.0" layoutY="346.0" onAction="#forgetPassword" prefHeight="30.0" prefWidth="173.0" ripplerFill="WHITE" style="-fx-font-size: 18;" text="Forget Password" textFill="WHITE" visible="false" />
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="vehicle" fitHeight="569.0" fitWidth="696.0" layoutX="178.0" layoutY="75.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../Images/crane.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,71 @@
+.shiny-orange {
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+.other_back{
+    -fx-background-color: rgb(2,0,36);
+    -fx-background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.orange_btn {
+    -fx-background-color: #fef4e9;
+    -fx-border-color: solid 1px #da7c0c;
+
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+
+.orange_btn:hover {
+    text-decoration: none;
+}
+
+.orange_btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.commonBack{
+    -fx-background-color:#ffffff;
+}
+
+.commonBack1{
+    -fx-background-color:#ffffff;
+    -fx-background-radius: 100;
+}
+
+.mainsceneBackground{
+    -fx-background-color: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /*linear-gradient(to right, #000428, #004e92);
+    /*linear-gradient(to right, #41295a, #2f0743);
+    /*linear-gradient(to right, #c31432, #240b36);
+    /*linear-gradient(to right, #93291E, #ED213A); */
+}
+
+.newRegisterButton{
+      /*-fx-background-color: linear-gradient(to right, #396afc, #2948ff);*/
+          
+          /*linear-gradient(to right, #fc4a1a, #f7b733)
+          /*linear-gradient(to right, #3c3b3f, #605c3c);
+          /*linear-gradient(to right, #0f0c29, #302b63, #24243e);
+          /*linear-gradient(to right, #4e54c8, #8f94fb);*/
+    -fx-background-color: linear-gradient(to right, #f5af19, #f12711);
+    -fx-background-radius:100;
+}
+
+.jfx-date-picker .text-field{
+    -jfx-unfocus-color: #58f21b;
+    -fx-prompt-text-fill: #fff;
+    -fx-text-fill: #fff;
+    -fx-font-size: 20px;
+}

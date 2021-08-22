@@ -1,0 +1,113 @@
+
+.radioButton{
+    -fx-font: bold;
+}
+.slider .axis{
+    -fx-tick-label-fill:white;
+}
+/*.combo-box-popup .list-view {
+-fx-background-color: -fx-box-border, -fx-control-inner-background;
+-fx-background-insets: 0, 1;
+-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+
+.combo-box-popup .list-view .list-cell {
+-fx-padding: 4 0 4 5;
+-fx-background-color: -fx-control-inner-background;
+}*/
+
+.jfx-combo-box {
+	-fx-background-color: #ffffff; /* #99ddff;*/
+}
+.combo-box-popup .list-view {
+    -fx-font-size : 15pt;
+}
+.jfx-combo-box .label {
+    -fx-background-color:  #0c4c8f;
+        -fx-font-size : 15pt;
+	/*-fx-background-color:  WHITE;*/
+	-fx-text-fill: black;
+}
+.background{
+    /*-fx-background-color: #ffffff;*/
+    -fx-background:transparent;
+    
+}
+.text{
+    -fx-text-fill: #c30000;
+	/*-fx-text-fill: #ffffff;*/
+    -fx-font: 18 System;
+}
+
+.buttonBack{
+    /*-fx-text-fill: #ffffff;*/
+    /*-fx-background-color: #a40b0b;*/
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+}
+
+.sliderCSS{
+    -fx-font-size: 20px;
+    -jfx-default-track: #e4e2e2;
+    -jfx-default-thumb: #9e9898;
+
+/*    -jfx-default-track: #f49090;*/
+/*    -jfx-default-thumb: #a40b0b;*/
+}
+
+.sliderCSS > .thumb{
+/*    -fx-background-color: #a40b0b;*/
+	-fx-background-color: #99ddff;/*#e4e2e2;*/
+}
+
+.sliderCSS .track{
+    -fx-pref-height: 5px;
+    -fx-pref-width: 5px;
+}
+
+.sliderCSS .animated-thumb{ /* size  */
+    -fx-background-color: #404040;/*#a40b0b;	*/
+    -fx-pref-height: 40px;
+    -fx-pref-width: 40px;
+}
+
+/* Set the table to be transparent. If you want to be completely transparent, the following should be indispensable --------------------------------- ---- */
+.table-view {
+	-fx-background-color: transparent;
+}
+.table-column {
+	-fx-background-color: transparent;
+	-fx-text-fill:#4d4c4c;
+	-fx-text-align:center;
+}
+
+.table-row-cell {
+    -fx-background-color:transparent;
+}
+.table-cell {
+    -fx-alignment: CENTER;
+     /* The rest is from caspian.css */
+
+    -fx-skin: "com.sun.javafx.scene.control.skin.TableCellSkin";
+    -fx-padding: 0.166667em; /* 2px, plus border adds 1px */
+
+    -fx-background-color: transparent;
+    /*-fx-border-color: #404040 -fx-table-cell-border-color #404040 #404040;*/
+    -fx-border-color: transparent -fx-table-cell-border-color transparent transparent;
+    /*-fx-border-width: 0.083333em; /* 1 */
+    -fx-cell-size: 2.0em; /* 24 */
+    -fx-text-fill:  #ffffff; /*#08519c;*//* #404040; */
+    
+}
+.table-row-cell:selected{
+    -fx-background-color:  linear-gradient(to right, #fdc830, #f37335);
+
+}
+/*.table-view .column-header-background {
+	-fx-background-color:transparent;
+	-fx-text-fill:#ffffff;
+} */
+.table-view .filler {
+	-fx-background-color:transparent;
+	-fx-text-align:center;	
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" prefHeight="895.0" prefWidth="978.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Get_7_12Controller">
+   <children>
+      <Label layoutX="399.0" layoutY="20.0" prefHeight="28.0" prefWidth="179.0" text="Rights Record Sheet">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="69.0" prefHeight="21.0" prefWidth="799.0" text="[Rules 3,5,6,7 of the maharashtra Land Revenue Rights Records and Registers (Preparation and Maintenance)Rules,1971]" />
+      <Label fx:id="vilageName" layoutX="40.0" layoutY="110.0" prefHeight="21.0" prefWidth="149.0" text="Rights Record Sheet" />
+      <Label fx:id="talukaName" layoutX="264.0" layoutY="110.0" text="Rights Record Sheet" />
+      <Label fx:id="distName" layoutX="488.0" layoutY="110.0" text="Rights Record Sheet" />
+      <Label fx:id="surveyInfo" layoutX="40.0" layoutY="147.0" prefHeight="28.0" prefWidth="916.0" text="Rights Record Sheet" />
+      <AnchorPane layoutX="40.0" layoutY="200.0" prefHeight="102.0" prefWidth="272.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="10.0" layoutY="14.0" prefHeight="21.0" prefWidth="250.0" text="Survey number and subdivision" />
+            <Label fx:id="surveyInfo1" layoutX="14.0" layoutY="51.0" prefHeight="42.0" prefWidth="250.0" text="Label" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="366.0" layoutY="200.0" prefHeight="102.0" prefWidth="561.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="24.0" layoutY="14.0" prefHeight="21.0" prefWidth="514.0" text="Survey number and subdivision" />
+            <Label fx:id="userName" layoutX="24.0" layoutY="51.0" prefHeight="42.0" prefWidth="514.0" text="Survey number and subdivision" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="40.0" layoutY="330.0" prefHeight="200.0" prefWidth="293.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="14.0" layoutY="20.0" prefHeight="21.0" prefWidth="134.0" text="Area Unite" />
+            <Label layoutX="193.0" layoutY="20.0" text="R.Ch.m." />
+            <Label layoutX="14.0" layoutY="60.0" prefHeight="21.0" prefWidth="134.0" text="Bin Farmining" />
+            <Label fx:id="binFarminingUnit" layoutX="193.0" layoutY="60.0" text="R.Ch.m." />
+            <Label layoutX="14.0" layoutY="100.0" prefHeight="21.0" prefWidth="134.0" text="Non-agri" />
+            <Label fx:id="nonAgriUnit" layoutX="193.0" layoutY="100.0" text="R.Ch.m." />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="344.0" layoutY="330.0" prefHeight="200.0" prefWidth="378.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="311.0" layoutY="19.0" prefHeight="21.0" prefWidth="40.0" text="Size" />
+            <Label layoutX="221.0" layoutY="19.0" prefHeight="21.0" prefWidth="40.0" text="Area" />
+            <Label fx:id="userName1" layoutX="31.0" layoutY="67.0" prefHeight="42.0" prefWidth="221.0" text="Label" wrapText="true" />
+            <Label fx:id="landSize" layoutX="311.0" layoutY="116.0" prefHeight="21.0" prefWidth="40.0" text="Size" />
+            <Label fx:id="landArea" layoutX="221.0" layoutY="116.0" prefHeight="21.0" prefWidth="40.0" text="Area" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="737.0" layoutY="330.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="14.0" prefHeight="21.0" prefWidth="179.0" text="Account Number">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="70.0" text="Clean">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="requestBtn" buttonType="RAISED" layoutX="813.0" layoutY="599.0" prefHeight="40.0" prefWidth="111.0" ripplerFill="WHITE" style="-fx-background-color: #d60c0c; -fx-text-fill: #fff;" text="Request">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="previousBtn" buttonType="RAISED" layoutX="110.0" layoutY="729.0" onAction="#showPrevious" prefHeight="40.0" prefWidth="134.0" ripplerFill="WHITE" style="-fx-background-color: #d60c0c; -fx-text-fill: #fff;" text="Previous">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="nextBtn" buttonType="RAISED" layoutX="790.0" layoutY="729.0" onAction="#showNext" prefHeight="40.0" prefWidth="134.0" ripplerFill="WHITE" style="-fx-background-color: #d60c0c; -fx-text-fill: #fff;" text="Next">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="33.515" spread="0.28" width="136.06" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

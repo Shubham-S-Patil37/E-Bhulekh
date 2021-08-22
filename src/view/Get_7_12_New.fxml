@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" prefHeight="895.0" prefWidth="978.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Get_7_12_NewController">
+   <children>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="20.0" prefHeight="30.0" prefWidth="971.0" text="Rights Record Sheet" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="69.0" prefHeight="21.0" prefWidth="799.0" text="[Rules 3,5,6,7 of the maharashtra Land Revenue Rights Records and Registers (Preparation and Maintenance)Rules,1971]" />
+      <Label fx:id="vilageName" layoutX="40.0" layoutY="110.0" prefHeight="21.0" prefWidth="293.0" text="Village :" />
+      <Label fx:id="talukaName" layoutX="333.0" layoutY="110.0" prefHeight="21.0" prefWidth="293.0" text="Taluka :" />
+      <Label fx:id="distName" layoutX="644.0" layoutY="110.0" prefHeight="21.0" prefWidth="293.0" text="District :" />
+      <Label fx:id="surveyInfo" layoutX="40.0" layoutY="147.0" prefHeight="28.0" prefWidth="562.0" text="Survey Number and Sub-Division" />
+      <AnchorPane layoutX="40.0" layoutY="175.0" prefHeight="123.0" prefWidth="293.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="10.0" layoutY="14.0" prefHeight="21.0" prefWidth="250.0" text="Survey Number and Sub-Division" />
+            <Label fx:id="surveyInfo1" layoutX="14.0" layoutY="51.0" prefHeight="42.0" prefWidth="250.0" text="Survey No - Land Info" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="346.0" layoutY="175.0" prefHeight="123.0" prefWidth="592.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="15.0" layoutY="10.0" prefHeight="21.0" prefWidth="514.0" text="Name of the Occupant" />
+            <Label fx:id="userName" layoutX="15.0" layoutY="40.0" prefHeight="42.0" prefWidth="514.0" text="Occupant's name" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="40.0" layoutY="305.0" prefHeight="200.0" prefWidth="293.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="14.0" layoutY="20.0" prefHeight="21.0" prefWidth="134.0" text="Area Unit" />
+            <Label layoutX="193.0" layoutY="20.0" prefHeight="21.0" prefWidth="75.0" text="Sq. Meter" />
+            <Label layoutX="14.0" layoutY="60.0" prefHeight="42.0" prefWidth="149.0" text="Non-Agricultaral Land Size" wrapText="true" />
+            <Label fx:id="binFarminingUnit" layoutX="193.0" layoutY="60.0" prefHeight="42.0" prefWidth="75.0" text="R.Ch.m." />
+            <Label layoutX="14.0" layoutY="112.0" prefHeight="42.0" prefWidth="134.0" text="Assessment Tax" />
+            <Label fx:id="nonAgriUnit" layoutX="193.0" layoutY="112.0" prefHeight="42.0" prefWidth="75.0" text="R.Ch.m." />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="344.0" layoutY="305.0" prefHeight="200.0" prefWidth="378.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="311.0" layoutY="19.0" prefHeight="21.0" prefWidth="58.0" text="Tax" />
+            <Label layoutX="221.0" layoutY="19.0" prefHeight="21.0" prefWidth="58.0" text="Area" />
+            <Label fx:id="userName1" layoutX="15.0" layoutY="30.0" prefHeight="98.0" prefWidth="179.0" text="Occupant's Name" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="landSize" layoutX="311.0" layoutY="69.0" prefHeight="21.0" prefWidth="58.0" text="tax" />
+            <Label fx:id="landArea" layoutX="221.0" layoutY="69.0" prefHeight="21.0" prefWidth="58.0" text="area" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="737.0" layoutY="305.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="14.0" prefHeight="21.0" prefWidth="179.0" text="Name of Tenant">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="70.0" prefHeight="98.0" prefWidth="160.0" text="Non - Agricultural Land for Home" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="requestBtn" buttonType="RAISED" layoutX="790.0" layoutY="599.0" onAction="#requestButtonClicked" prefHeight="42.0" prefWidth="134.0" ripplerFill="WHITE" style="-fx-background-color: #d60c0c; -fx-text-fill: #fff;" text="Request">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="previousBtn" buttonType="RAISED" layoutX="110.0" layoutY="729.0" onAction="#showPrevious" prefHeight="40.0" prefWidth="134.0" ripplerFill="WHITE" style="-fx-background-color: #d60c0c; -fx-text-fill: #fff;" text="Previous">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="nextBtn" buttonType="RAISED" layoutX="790.0" layoutY="729.0" onAction="#showNext" prefHeight="40.0" prefWidth="134.0" ripplerFill="WHITE" style="-fx-background-color: #d60c0c; -fx-text-fill: #fff;" text="Next">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="33.515" spread="0.28" width="136.06" />
+         </effect>
+      </JFXButton>
+      <Label fx:id="buyDate" alignment="CENTER_RIGHT" layoutX="659.0" layoutY="147.0" prefHeight="28.0" prefWidth="267.0" text="Date :" />
+   </children>
+</AnchorPane>

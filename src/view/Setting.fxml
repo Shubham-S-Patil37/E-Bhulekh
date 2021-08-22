@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="backgroundPane" prefHeight="1000.0" prefWidth="900.0" stylesheets="@getCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingController">
+   <children>
+      <Label layoutX="70.0" layoutY="100.0" prefHeight="60.0" prefWidth="260.0" style="-fx-text-fill: #fff;" text="Change Passwords">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="changePass" buttonType="RAISED" layoutX="515.0" layoutY="100.0" onAction="#changePasswords" prefHeight="60.0" ripplerFill="WHITE" style="-fx-text-fill: #fff;" text="Change">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="70.0" layoutY="250.0" prefHeight="60.0" prefWidth="260.0" style="-fx-text-fill: #fff;" text="Change E Mail">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="changeMail" buttonType="RAISED" layoutX="515.0" layoutY="250.0" onAction="#changeEmail" prefHeight="60.0" ripplerFill="WHITE" style="-fx-text-fill: #fff;" text="Change">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="47.0" layoutY="410.0" prefHeight="5.0" prefWidth="807.0" />
+      <Label layoutX="54.0" layoutY="430.0" prefHeight="21.0" prefWidth="325.0" text="Change Background" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="523.0" prefHeight="50.0" prefWidth="234.0" text="Lawrencium" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="623.0" prefHeight="50.0" prefWidth="234.0" text="Witching Hour" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="723.0" prefHeight="50.0" prefWidth="234.0" text="Very Blue" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="823.0" prefHeight="50.0" prefWidth="234.0" text="Flickr" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="bgcolour1" layoutX="430.0" layoutY="505.0" onAction="#backgroundColour1" prefHeight="50.0" prefWidth="140.0" size="15.0" toggleColor="#ab0566" toggleLineColor="#830751" unToggleColor="#4401b8" unToggleLineColor="#2c017c">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="bgcolour2" layoutX="430.0" layoutY="605.0" onAction="#backgroundColour2" prefHeight="50.0" prefWidth="140.0" size="15.0" toggleColor="#ab0566" toggleLineColor="#830751" unToggleColor="#4401b8" unToggleLineColor="#2c017c">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="bgcolour3" layoutX="430.0" layoutY="705.0" onAction="#backgroundColour3" prefHeight="50.0" prefWidth="140.0" size="15.0" toggleColor="#ab0566" toggleLineColor="#830751" unToggleColor="#4401b8" unToggleLineColor="#2c017c">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="bgcolour4" layoutX="430.0" layoutY="805.0" onAction="#backgroundColour4" prefHeight="50.0" prefWidth="140.0" size="15.0" toggleColor="#ab0566" toggleLineColor="#830751" unToggleColor="#4401b8" unToggleLineColor="#2c017c">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="840.0" layoutY="15.0" onAction="#closeButtonClickMethod" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: linear-gradient(to right, #e0eafc, #cfdef3); -fx-background-radius: 30;" text="X">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#8a852f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="sPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserConfirmationController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="aPane" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainsceneBackground" stylesheets="@getCss.css">
+         <children>
+            <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="1860.0" layoutY="15.0" onAction="#closeButtonClickMethod" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: linear-gradient(to right, #e0eafc, #cfdef3); -fx-background-radius: 30;" text="X">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#8a852f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXComboBox fx:id="selectDist" focusColor="#65e035" layoutX="185.0" layoutY="380.0" onAction="#getSelectedDist" prefHeight="43.0" prefWidth="351.0" promptText="Select District" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="selectTal" focusColor="#65e035" layoutX="185.0" layoutY="500.0" onAction="#getSelectedTal" prefHeight="43.0" prefWidth="351.0" promptText="Select Taluka" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="selectVill" focusColor="#65e035" layoutX="185.0" layoutY="620.0" prefHeight="43.0" prefWidth="351.0" promptText="Select Village" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" />
+            <Separator layoutX="762.0" layoutY="61.0" orientation="VERTICAL" prefHeight="815.0" prefWidth="4.0" />
+            <Label alignment="CENTER" layoutX="46.0" layoutY="100.0" prefHeight="69.0" prefWidth="638.0" text="Select Your Location" textFill="WHITE">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="781.0" layoutY="100.0" prefHeight="69.0" prefWidth="1123.0" text="Verify Your Email" textFill="WHITE">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="emailID" focusColor="#79ab15" labelFloat="true" layoutX="840.0" layoutY="270.0" prefHeight="45.0" prefWidth="966.0" promptText="Enter Email ID" style="-fx-text-fill: #fff; -fx-prompt-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="otpBox1" alignment="CENTER" focusColor="#79ab15" layoutX="1144.0" layoutY="619.0" prefHeight="31.0" prefWidth="45.0" style="-fx-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="otpBox2" alignment="CENTER" focusColor="#79ab15" layoutX="1256.0" layoutY="619.0" prefHeight="31.0" prefWidth="45.0" style="-fx-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="otpBox3" alignment="CENTER" focusColor="#79ab15" layoutX="1368.0" layoutY="619.0" prefHeight="31.0" prefWidth="45.0" style="-fx-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="otpBox4" alignment="CENTER" focusColor="#79ab15" layoutX="1480.0" layoutY="619.0" prefHeight="31.0" prefWidth="45.0" style="-fx-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="countingLeb" alignment="CENTER" layoutX="1195.0" layoutY="494.0" prefHeight="45.0" prefWidth="256.0" text="39" textFill="WHITE">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="resendOTP" buttonType="RAISED" layoutX="1039.0" layoutY="387.0" onAction="#reSendOTP" prefHeight="45.0" prefWidth="271.0" ripplerFill="#ee1515" text="Resend OTP" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="varifyOTPBtn" buttonType="RAISED" layoutX="1375.0" layoutY="387.0" onAction="#varifyMail" prefHeight="45.0" prefWidth="271.0" ripplerFill="#ee1515" text="Verify" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="varifyBtn" buttonType="RAISED" layoutX="1242.0" layoutY="781.0" onAction="#varifyUser" prefHeight="60.0" prefWidth="200.0" styleClass="newRegisterButton" stylesheets="@getCss.css" text="Proceed" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

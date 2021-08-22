@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PurchaseFXMLController">
+   <children>
+      <AnchorPane fx:id="aPane" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainsceneBackground" stylesheets="@getCss.css">
+         <children>
+            <JFXComboBox fx:id="dist" focusColor="#65e035" layoutX="242.0" layoutY="156.0" onAction="#selectDist" prefHeight="51.0" prefWidth="305.0" promptText="District" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" visibleRowCount="5" />
+            <JFXComboBox fx:id="tal" focusColor="#65e035" layoutX="242.0" layoutY="280.0" onAction="#selectTal" prefHeight="51.0" prefWidth="305.0" promptText="Taluka" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" visibleRowCount="5" />
+            <JFXComboBox fx:id="vilage" focusColor="#65e035" layoutX="242.0" layoutY="404.0" onAction="#selectVilage" prefHeight="51.0" prefWidth="305.0" promptText="Vilage" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" visibleRowCount="5" />
+            <JFXComboBox fx:id="name" focusColor="#65e035" layoutX="242.0" layoutY="528.0" onAction="#selectName" prefHeight="51.0" prefWidth="305.0" promptText="Name" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" visibleRowCount="5" />
+            <ImageView fx:id="imageView_7_12" fitHeight="890.0" fitWidth="980.0" layoutX="800.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/images/PngItem_5176676.png" />
+               </image>
+            </ImageView>
+            <StackPane fx:id="slidingPane" layoutX="800.0" layoutY="120.0" prefHeight="890.0" prefWidth="980.0" style="-fx-background-color: #fff;" />
+            <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="1800.0" layoutY="15.0" onAction="#closeButtonClickMethod" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: linear-gradient(to right, #e0eafc, #cfdef3); -fx-background-radius: 30;" text="X">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#8a852f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

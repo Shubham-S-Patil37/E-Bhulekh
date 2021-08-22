@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@getCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFxmlFrontViewController">
+   <children>
+      <JFXButton fx:id="buynow" alignment="CENTER_RIGHT" graphicTextGap="200.0" layoutX="1294.0" layoutY="47.0" onAction="#buyNow" prefHeight="131.0" prefWidth="501.0" style="-fx-background-color: #fff; -fx-background-radius: 20;" stylesheets="@getCss.css" text="Buy Now">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="buyNowImg1" fitHeight="122.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/images/shopping_cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="mypurchase" alignment="CENTER_RIGHT" graphicTextGap="140.0" layoutX="718.0" layoutY="47.0" onAction="#myPurchase" prefHeight="131.0" prefWidth="501.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" stylesheets="@getCss.css" text="My Purchase">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="mypurchesImg1" fitHeight="122.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/images/shopping_cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="request" alignment="CENTER_RIGHT" graphicTextGap="200.0" layoutX="128.0" layoutY="47.0" onAction="#getMyRequest" prefHeight="131.0" prefWidth="501.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" stylesheets="@getCss.css" text="Requests">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="requestImg1" fitHeight="122.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/images/request.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane fx:id="loadingPane" layoutX="128.0" layoutY="200.0" prefHeight="141.0" prefWidth="144.0" />
+      <AnchorPane layoutX="107.0" layoutY="641.0" prefHeight="336.0" prefWidth="1723.0" style="-fx-background-color: #fff;" visible="false">
+         <children>
+            <ImageView fx:id="profileFrontPhoto" fitHeight="280.0" fitWidth="280.0" layoutX="14.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="wellcomeLabel" alignment="CENTER" layoutX="349.0" layoutY="34.0" prefHeight="47.0" prefWidth="705.0" text="WellCome Shubham" textFill="#f80000">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="requestImg" fitHeight="122.0" fitWidth="122.0" layoutX="1307.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="mypurchesImg" fitHeight="122.0" fitWidth="122.0" layoutX="731.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="buyNowImg" fitHeight="122.0" fitWidth="122.0" layoutX="139.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="1800.0" layoutY="15.0" onAction="#closeButtonClickMethod" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: linear-gradient(to right, #e0eafc, #cfdef3); -fx-background-radius: 30;" text="X">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#8a852f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <ImageView fitHeight="750.0" fitWidth="1750.0" layoutX="300.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/images/1_uO32LvJvQOvw9K3zBFbfnw.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

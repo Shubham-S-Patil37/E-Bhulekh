@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="aPane" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainsceneBackground" stylesheets="@getCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyPurchaseController">
+   <children>
+      <ImageView fx:id="imageView_7_12" fitHeight="890.0" fitWidth="980.0" layoutX="800.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/images/PngItem_5176676.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="1800.0" layoutY="15.0" onAction="#closeButtonClickMethod" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: linear-gradient(to right, #e0eafc, #cfdef3); -fx-background-radius: 30;" text="X">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#8a852f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXComboBox fx:id="selectLand" focusColor="WHITE" layoutX="60.0" layoutY="120.0" onAction="#getSelectedLand" prefHeight="50.0" prefWidth="350.0" promptText="Property List" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" />
+      <StackPane fx:id="slidingPane" layoutX="800.0" layoutY="120.0" prefHeight="890.0" prefWidth="980.0" />
+      <Label layoutX="64.0" layoutY="70.0" prefHeight="50.0" prefWidth="346.0" text="Your Land Information" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+.root {
+ -fx-background-color: darkblue;
+}
+
+.button {
+ -fx-font-size:2em;
+ -fx-font-family: "Eras Medium ITC";
+ -fx-padding:15px 20px;
+ -fx-text-alignment: center;
+ -fx-border-width: 2px; 
+ -fx-border-color: cyan;
+ -fx-text-fill:cyan;
+ -fx-border-radius: 50%;
+ -fx-padding:1em 2em 0.9em 2em;
+}
+
+.button:hover {
+ -fx-border-color: derive(cyan, -20%);
+ -fx-text-fill:derive(cyan, -20%);
+}
+
+.a:hover{
+    -fx-text-fill: #111;
+    -fx-border-color: #39ff14;
+}

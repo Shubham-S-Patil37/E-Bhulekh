@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddLandController">
+   <children>
+      <AnchorPane fx:id="aPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: linear-gradient(to right, #0f0c29, #302b63, #24243e);" stylesheets="@getCss.css">
+         <children>
+            <JFXTextField fx:id="nameTxt" focusColor="WHITE" layoutX="150.0" layoutY="150.0" prefHeight="50.0" prefWidth="650.0" promptText="Owner Name" style="-fx-prompt-text-fill: #fff; -fx-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="dist" focusColor="#65e035" layoutX="500.0" layoutY="450.0" onAction="#selectDist" prefHeight="50.0" prefWidth="305.0" promptText="District" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" visibleRowCount="5" />
+            <JFXComboBox fx:id="tal" focusColor="#65e035" layoutX="150.0" layoutY="600.0" onAction="#selectTal" prefHeight="50.0" prefWidth="305.0" promptText="Taluka" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" visibleRowCount="5" />
+            <JFXComboBox fx:id="vilage" focusColor="#65e035" layoutX="500.0" layoutY="600.0" onAction="#selectVilage" prefHeight="50.0" prefWidth="305.0" promptText="Vilage" style="-fx-padding: 0px 0px 0px 20px; -fx-font-size: 20px;" stylesheets="@../res/Main.css" unFocusColor="WHITE" visibleRowCount="5" />
+            <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="1800.0" layoutY="15.0" onAction="#closeButtonClickMethod" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: linear-gradient(to right, #e0eafc, #cfdef3); -fx-background-radius: 30;" text="X">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#8a852f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXTextField fx:id="landCode" focusColor="WHITE" layoutX="150.0" layoutY="300.0" prefHeight="50.0" prefWidth="300.0" promptText="Survey No. / Land Code" style="-fx-prompt-text-fill: #fff; -fx-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="area" focusColor="WHITE" layoutX="500.0" layoutY="300.0" prefHeight="50.0" prefWidth="300.0" promptText="Area in Sq. Meters" style="-fx-prompt-text-fill: #fff; -fx-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXDatePicker fx:id="date" defaultColor="#58f21b" editable="false" layoutX="150.0" layoutY="450.0" prefHeight="50.0" prefWidth="300.0" promptText="Purchase Date " stylesheets="@getCss.css" />
+            <JFXButton fx:id="addLand" buttonType="RAISED" layoutX="350.0" layoutY="750.0" onAction="#landEntry" prefHeight="60.0" prefWidth="300.0" ripplerFill="WHITE" styleClass="newRegisterButton" stylesheets="@getCss.css" text="Add Property" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="ownerNamesTable" layoutX="1000.0" layoutY="300.0" onMouseClicked="#tableViewMouseClicked" prefHeight="700.0" prefWidth="800.0" stylesheets="@../res/Main.css" />
+            <JFXTextField fx:id="searchNameTxt" alignment="CENTER" focusColor="WHITE" layoutX="1000.0" layoutY="150.0" prefHeight="50.0" prefWidth="800.0" promptText="Search Owner Name" style="-fx-prompt-text-fill: #fff; -fx-text-fill: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
